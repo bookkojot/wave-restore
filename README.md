@@ -1,14 +1,20 @@
+Попытка исправить картинку
 
+![Before](1.png)
+
+Получилось как-то так:
+
+![Before](3.png)
 
 Конвертим кортинку:
-ffmpeg -i 1.png -f rawvideo -pix_fmt rgb24 frame.raw
+`ffmpeg -i 1.png -f rawvideo -pix_fmt rgb24 frame.raw`
 
 Компиляем-запускаем:
-gcc 1.c&&./a.out
+`gcc 1.c&&./a.out`
 
 Конвертим результат в кортинку:
-ffmpeg -f rawvideo -pix_fmt rgb24 -s 704x576 -i frame2.raw -y 3.png
+`ffmpeg -f rawvideo -pix_fmt rgb24 -s 704x576 -i frame2.raw -y 3.png`
 
 В принципе, можно добавить пару строк и конвертить видео, но мне лень
 
-
+В принципе, я могу исправить и цветовые полосы, но мне тоже лень
